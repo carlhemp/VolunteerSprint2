@@ -97,6 +97,9 @@ img {
 .slice3 .column > #slice3 {
 	display: block;
 }
+.z {
+	z-index: 10;
+}
 #activities {
   font-size: 20px;
 }
