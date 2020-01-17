@@ -9,6 +9,7 @@ button {
 body {
 	margin: 0;
 	padding-top: 3rem;
+	padding-bottom: 5rem;
 }
 a {
 	text-decoration: none;
@@ -57,6 +58,11 @@ p, label, a, button {
 .column#cart {
 	flex: 0  0 300px ;
 }
+img {
+	border-radius: 7px;
+	margin-left: 2rem;
+	box-shadow: 2px 2px 4px;
+}
 .column#activities > div {
 	display: none;
 }
@@ -65,7 +71,15 @@ p, label, a, button {
 	display: none;
 }
 .article {
+	background-color: lightsalmon;
+	border-radius: 17px;
+	padding: 1px;
+	padding-left: 1rem;
+	padding-right: 1rem;
 	max-width: 800px;	
+}
+.article p {
+	padding-left: 2rem;
 }
 .slice1 .column > #slice1 {
 	display: block;
@@ -152,6 +166,9 @@ ul {
 }
 .activities.cart .activity_hide {
 	display: inline-block;
+}
+.activities.cart .cart_hide {
+	display: none;
 }
 .activities.cart #cart {
 	margin-left: 3rem;
