@@ -8,11 +8,9 @@ button {
 }
 body {
 	margin: 0;
-	padding-top: 3rem;
 	padding-bottom: 5rem;
 	max-width: 1600px;
 	margin-left: auto;
-	overflow: hidden;
 }
 a {
 	text-decoration: none;
@@ -46,11 +44,16 @@ p, label, a, button {
 	overflow: auto;
 }
 .row, #home {
+	padding-top: 5rem;
 	display: none;
 }
 .home #home {
 	display: block;
 	max-width: 900px;
+}
+body.activities {
+	overflow: hidden;
+
 }
 .activities .row {
 	display: flex;
