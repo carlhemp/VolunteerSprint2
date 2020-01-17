@@ -10,6 +10,9 @@ body {
 	margin: 0;
 	padding-top: 3rem;
 	padding-bottom: 5rem;
+	max-width: 1600px;
+	margin-left: auto;
+	overflow: hidden;
 }
 a {
 	text-decoration: none;
@@ -47,6 +50,7 @@ p, label, a, button {
 }
 .home #home {
 	display: block;
+	max-width: 900px;
 }
 .activities .row {
 	display: flex;
@@ -148,6 +152,15 @@ a:visited {
 	padding-bottom: 2rem;
 	margin-bottom: 1rem;
 	margin-right: 1rem;
+	position: relative;
+}
+.activities.cart .card {
+	padding-bottom: 7rem;
+}
+.activities.cart .card label {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 1rem;
 }
 ul {
 	font-size: 20px;
