@@ -29,20 +29,21 @@ function hashchanged(){
   	
   	if(hash.search('cart') != -1){
 	  	$('body').addClass('cart');
+		  window.document.title = "Cart";
 	  }
 
 	  else if(hash.search('slice1') != -1) {
 	  	$('body').addClass('slice1');
-		  window.document.title = "Slice1";
+		  window.document.title = "Events";
 	  }
 	  else if(hash.search('slice2') != -1) {
 	  	$('body').addClass('slice2');
-		  window.document.title = "Slice2";
+		  window.document.title = "Discipleship";
 	   
 	  }
 	  else if(hash.search('slice3') != -1) {
 	  	$('body').addClass('slice3');
-		  window.document.title = "Slice3";
+		  window.document.title = "Hospitality";
 	   
 	  }
   }

@@ -8,6 +8,7 @@ button {
 }
 body {
 	margin: 0;
+	padding-top: 3rem;
 }
 a {
 	text-decoration: none;
@@ -29,7 +30,7 @@ nav a {
 h1 {
 	font-size: 54px;
 }
-p {
+p, label, a, button {
 	font-size: 20px;
 }
 #home {
@@ -54,7 +55,7 @@ p {
 	flex: 1 1 300px;
 }
 .column#cart {
-	flex: 0  0 200px ;
+	flex: 0  0 300px ;
 }
 .column#activities > div {
 	display: none;
@@ -129,7 +130,7 @@ a:visited {
 	padding: 1rem;
 	padding-bottom: 2rem;
 	margin-bottom: 1rem;
-	margin-right: 2rem;
+	margin-right: 1rem;
 }
 ul {
 	font-size: 20px;
@@ -143,9 +144,17 @@ ul {
 .removeCard {
 	float: right;
 }
+.activities .activity_hide {
+	display: none;
+}
+.activities.cart .activity_hide {
+	display: inline-block;
+}
+.activities.cart #cart {
+	margin-left: 3rem;
+}
 button {
 	  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
   /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
