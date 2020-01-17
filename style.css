@@ -73,7 +73,9 @@ body {
 	content: 'Hiya partner!!';
 	z-index: 10;
 }
-
+.grid a:after {
+	height: 0;
+}
 .card {
 	background-color: orange;
 	border-radius: 10px;
@@ -84,4 +86,7 @@ body {
 }
 #cart .card :nth-child(n+3){
 	display: none;
+}
+.cart #cart .card :nth-child(n+3){
+	display: initial;
 }
