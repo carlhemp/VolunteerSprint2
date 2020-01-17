@@ -80,6 +80,9 @@ p, label, a, button {
   margin-left: 3rem;
   font-size: 20px;
 }
+#activities .card {
+	margin: 2rem;
+}
 .activities.cart #cart {
 	flex: 1 1 400px;
 }
@@ -152,6 +155,9 @@ ul {
 }
 .activities.cart #cart {
 	margin-left: 3rem;
+}
+.activities.cart .card {
+	width: 400px;
 }
 button {
 	  font-family: inherit; /* 1 */
