@@ -3,7 +3,7 @@ $(function () {
   window.addEventListener("hashchange", hashchanged, false);
   // Trigger the event (useful on page load).
   hashchanged();
-  $('.card').append('<button class="copyToCart">Add to my Cart</button>')
+  $('.card').append('<button class="copyToCart">Add to my activity list</button>')
   $('body').on('click', '.copyToCart', function(){
 		$(this).closest('.card').clone().prepend('<button class="removeCard">X</button>').appendTo('#cartList');	
 		$('#cartList .copyToCart').remove();
@@ -47,4 +47,6 @@ function hashchanged(){
 	   
 	  }
   }
+  $('#activities')[0].scrollTo(0, 0);
+  $('#cart')[0].scrollTo(0, 0);
 }

@@ -97,8 +97,8 @@ img {
 .slice3 .column > #slice3 {
 	display: block;
 }
-#activities {
-  margin-left: 3rem;
+#activities, #cart {
+	margin-top: 3rem;
   font-size: 20px;
 }
 #activities .card {
@@ -191,6 +191,12 @@ ul {
 }
 .activities.cart .card {
 	width: 400px;
+}
+.article {
+	margin-bottom: 5rem;
+}
+footer {
+	padding-bottom: 3rem;
 }
 button {
 	  font-family: inherit; /* 1 */
