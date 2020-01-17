@@ -4,13 +4,14 @@ $(function () {
   // Trigger the event (useful on page load).
   hashchanged();
   $('.card').append('<button class="copyToCart">Add to my Cart</button>')
-  $('.copyToCart').click(function(){
-		$(this).closest('.card').clone().appendTo('#cartList');	
-  })
-});   
-function addToCart(el) {
-	
-}
+  $('body').on('click', '.copyToCart', function(){
+		$(this).closest('.card').clone().prepend('<button class="removeCard">X</button>').appendTo('#cartList');	
+		$('#cartList .copyToCart').remove();
+  });
+  $('body').on('click','.removeCard', function(){
+    $(this).closest('.card').remove();
+  });
+});
 function hashchanged(){
   var hash = location.hash;
   console.log(hash);
