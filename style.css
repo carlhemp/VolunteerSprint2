@@ -47,13 +47,41 @@ body {
 .activities.cart #cart {
 	flex: 1 1 400px;
 }
-
+.grid {
+	margin-left: 3rem;
+}
 .grid a {
-	width: 150px;
-	height: 150px;
+	background-color: lightslategray;
+	padding: 1em;
+	border-radius: 5px;
+	width: calc(150px - 1em);
+	height: calc(150px - 1em);
 	display: inline-block;
+	margin: 0.5rem;
+}
+.grid a:hover {
+	transform: scale(1.15);
+}
+.grid a:hover:after {
+	position: absolute;
+	background-color: orange;
+	right: -5em;
+	height: calc(100% - 2em);
+	top: 0em;
+	border-radius: 1em;
+	padding: 1em;
+	content: 'Hiya partner!!';
+	z-index: 10;
 }
 
 .card {
 	background-color: orange;
+	border-radius: 10px;
+	padding: 1em;
+	padding-bottom: 2em;
+	padding-top: 0.1em;
+	margin-bottom: 1em;
+}
+#cart .card :nth-child(n+3){
+	display: none;
 }
