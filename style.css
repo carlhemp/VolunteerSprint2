@@ -1,7 +1,59 @@
-#frame3 {
+*{
+  box-sizing: border-box;
+  transition: all .25s; 
+}
+body {
+	margin: 0;
+}
+.column {
+	margin: 0 1em 0 1em;
+	height: 100%;
+	overflow: auto;
+}
+.row, #home {
 	display: none;
 }
-#frame4 {
+.home #home {
+	display: block;
+}
+.activities .row {
+	display: flex;
+	flex-direction: row;
+}
+.column#activities {
+	flex: 1 1 300px;
+}
+.column#cart {
+	flex: 0  0 200px ;
+}
+.column#activities > div {
 	display: none;
 }
 
+.cart #activities {
+	display: none;
+}
+
+.slice1 .column > #slice1 {
+	display: block;
+}
+.slice2 .column > #slice2 {
+	display: block;
+}
+.slice3 .column > #slice3 {
+	display: block;
+}
+
+.activities.cart #cart {
+	flex: 1 1 400px;
+}
+
+.grid a {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+}
+
+.card {
+	background-color: orange;
+}
