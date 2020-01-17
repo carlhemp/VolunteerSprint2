@@ -88,5 +88,5 @@ body {
 	display: none;
 }
 .cart #cart .card :nth-child(n+3){
-	display: initial;
+	display: block;
 }
