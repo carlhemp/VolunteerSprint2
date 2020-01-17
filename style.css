@@ -97,8 +97,7 @@ img {
 .slice3 .column > #slice3 {
 	display: block;
 }
-#activities, #cart {
-	margin-top: 3rem;
+#activities {
   font-size: 20px;
 }
 #activities .card {
